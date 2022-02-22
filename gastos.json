@@ -1,0 +1,10 @@
+{
+  "gastos": [
+    {
+      "id": "1",
+      "roommate": "Alfredodo",
+      "descripcion": "comida",
+      "monto": "25000"
+    }
+  ]
+}
