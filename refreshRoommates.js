@@ -15,7 +15,6 @@ async function refreshRoommates() {
       .map((gasto) => +gasto.monto)
       .reduce((total, monto) => total + monto, 0);
     const gastoPromedio = totalGastosRoomates / roommates.length;
-    console.log(gastoPromedio);
 
     roommates = roommates.map(({ id, nombre, debe, recibe }) => {
       const gastosXnombre = gastos

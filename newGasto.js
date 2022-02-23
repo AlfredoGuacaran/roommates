@@ -10,12 +10,10 @@ async function newGasto(roommate, descripcion, monto) {
       monto: monto,
     };
 
-    const dataBase = JSON.parse(fs.readFileSync('./gastos.json', 'utf-8'));
-    dataBase.gastos.push(newGasto);
+    const { gastos } = JSON.parse(fs.readFileSync('./gastos.json', 'utf-8'));
+    gastos = gastos.push(newGasto);
 
-    fs.writeFileSync('gastos.json', JSON.stringify(dataBase));
-
-    return dataBase;
+    fs.writeFileSync('gastos.json', JSON.stringify({ gastos }));
   } catch (error) {
     console.log(error.message);
     throw error;

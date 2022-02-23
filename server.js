@@ -4,6 +4,9 @@ import fs from 'fs';
 import newRoommate from './newRoommate.js';
 import newGasto from './newGasto.js';
 import refreshRoommates from './refreshRoommates.js';
+import deleteGasto from './deleteGasto.js';
+import putGasto from './putGasto.js';
+
 app.use(express.static('static'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -33,6 +36,29 @@ app.post('/gasto', async (req, res) => {
     await newGasto(roommate, descripcion, monto);
     await refreshRoommates();
 
+    res.redirect('/roommates');
+  });
+});
+
+app.delete('/gasto', async (req, res) => {
+  const { id } = req.query;
+  console.log(id);
+  await deleteGasto(id);
+  await refreshRoommates();
+  res.redirect('/roommates');
+});
+
+app.put('/gasto', async (req, res) => {
+  const { id } = req.query;
+  let body;
+  req.on('data', (payload) => {
+    body = JSON.parse(payload);
+  });
+  req.on('end', async () => {
+    const { roommate, descripcion, monto } = body;
+
+    await putGasto(id, roommate, descripcion, monto);
+    await refreshRoommates();
     res.redirect('/roommates');
   });
 });
