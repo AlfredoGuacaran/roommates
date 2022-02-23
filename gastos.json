@@ -1,10 +1,1 @@
-{
-  "gastos": [
-    {
-      "id": "1",
-      "roommate": "Alfredodo",
-      "descripcion": "comida",
-      "monto": "25000"
-    }
-  ]
-}
+{"gastos":[{"id":"f37ad1ce-bfa3-4be7-b283-1717894adbb8","roommate":"Sebastian Soma","descripcion":"Articulos de limpieza","monto":15000},{"id":"5923d4be-5cb2-4ed5-af22-769db22dd0fa","roommate":"Francis Fletcher","descripcion":"Articulos de limpieza","monto":15000},{"id":"9e5ec8e7-83f1-469d-90d9-eb79c616e12c","roommate":"Sebastian Soma","descripcion":"Articulos de limpieza","monto":15000},{"id":"30b77a35-cf43-43a5-befd-b651fd754caf","roommate":"Sebastian Soma","descripcion":"Articulos de limpieza","monto":15000},{"id":"f482dba5-2bf5-44ca-9070-cc20f39f1386","roommate":"Francis Fletcher","descripcion":"Articulos de limpieza","monto":15000},{"id":"1e375b42-8407-44a6-800a-180bd160a3f4","roommate":"Sebastian Soma","descripcion":"Articulos de limpieza","monto":15000},{"id":"64fb7a57-6a88-478a-86b3-ac82615dffbd","roommate":"Francis Fletcher","descripcion":"Articulos de limpieza","monto":15000},{"id":"5d52e54c-8674-444a-afc9-55a2590e7bab","roommate":"Francis Fletcher","descripcion":"Articulos de limpieza","monto":15000},{"id":"cfb16e77-ff78-494c-a4c2-f4b4c4a0dd7a","roommate":"Francis Fletcher","descripcion":"Articulos de limpieza","monto":15000},{"id":"d77de280-a610-4006-8fb1-c01879f27437","roommate":"Francis Fletcher","descripcion":"Articulos de limpieza","monto":15000},{"id":"4fa94e93-6903-42d0-bf58-445ae5efeb90","roommate":"Elizabeth Wang","descripcion":"Articulos de limpieza","monto":15000},{"id":"8cbc6f67-9ac0-4250-b7d9-c2b42b05e2ef","roommate":"علیرضا رضاییان","descripcion":"Articulos de limpieza","monto":15000},{"id":"3ae04e42-2d8c-49bb-bd29-36c1db208f97","roommate":"علیرضا رضاییان","descripcion":"Articulos de limpieza","monto":30000},{"id":"51f3a836-a7de-4c6a-9fc1-ee7518b37f70","roommate":"علیرضا رضاییان","descripcion":"Articulos de limpieza","monto":7500},{"id":"b1788d53-1c72-494a-8ff5-bb8cc9c1ca03","roommate":"علیرضا رضاییان","descripcion":"Articulos de limpieza","monto":1875},{"id":"def09cc9-ac41-4752-866d-f4e1b25903ab","roommate":"علیرضا رضاییان","descripcion":"Articulos de limpieza","monto":1000}]}
