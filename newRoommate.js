@@ -13,6 +13,7 @@ async function newRoommate() {
       id: uuidv4(),
       debe: 0,
       recibe: 0,
+      email: 'tests.alfredo@gmail.com',
     };
 
     const dataBase = JSON.parse(fs.readFileSync('./roommates.json', 'utf-8'));

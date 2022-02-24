@@ -1,5 +1,6 @@
 import { v4 as uuidv4 } from 'uuid';
 import fs from 'fs';
+// import enviarEmail from './email.js';
 
 async function newGasto(roommate, descripcion, monto) {
   try {
@@ -10,8 +11,8 @@ async function newGasto(roommate, descripcion, monto) {
       monto: monto,
     };
 
-    const { gastos } = JSON.parse(fs.readFileSync('./gastos.json', 'utf-8'));
-    gastos = gastos.push(newGasto);
+    let { gastos } = JSON.parse(fs.readFileSync('./gastos.json', 'utf-8'));
+    gastos.push(newGasto);
 
     fs.writeFileSync('gastos.json', JSON.stringify({ gastos }));
   } catch (error) {

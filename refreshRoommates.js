@@ -16,7 +16,7 @@ async function refreshRoommates() {
       .reduce((total, monto) => total + monto, 0);
     const gastoPromedio = totalGastosRoomates / roommates.length;
 
-    roommates = roommates.map(({ id, nombre, debe, recibe }) => {
+    roommates = roommates.map(({ id, nombre, debe, recibe, email }) => {
       const gastosXnombre = gastos
         .filter((gasto) => gasto.roommate == nombre)
         .map((gasto) => +gasto.monto)
@@ -35,7 +35,13 @@ async function refreshRoommates() {
         recibe = 0;
         debe = 0;
       }
-      return { id: id, nombre: nombre, debe: debe, recibe: recibe };
+      return {
+        id: id,
+        nombre: nombre,
+        debe: debe,
+        recibe: recibe,
+        email: email,
+      };
     });
 
     fs.writeFileSync(

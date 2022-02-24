@@ -56,7 +56,6 @@ app.put('/gasto', async (req, res) => {
   });
   req.on('end', async () => {
     const { roommate, descripcion, monto } = body;
-
     await putGasto(id, roommate, descripcion, monto);
     await refreshRoommates();
     res.redirect('/roommates');
